@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Safari</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.powerflasher.fdt.core.FlashBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.powerflasher.fdt.core.FlashNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>IChapetzGame</name>
+			<type>2</type>
+			<locationURI>IChapetzGame</locationURI>
+		</link>
+		<link>
+			<name>SoundManager.swc</name>
+			<type>1</type>
+			<locationURI>SoundManager</locationURI>
+		</link>
+		<link>
+			<name>TestGameManager</name>
+			<type>2</type>
+			<locationURI>TestGameManager</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

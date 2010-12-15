@@ -1,0 +1,10 @@
+*/lib/
+*/bin/
+*/script/
+*/src/*.swf
+*/src_test/
+*/temp/
+.metadata/
+*.swf
+*/sounds/*.mp3
+documents/
