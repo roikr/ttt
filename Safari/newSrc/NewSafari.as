@@ -26,24 +26,30 @@ package {
 		private static const STATE_BLINKING : int = 3;
 		private static const STATE_SHOOTED : int = 4;
 		
+		
+		
 		private var state : int;
 		private var animalDistance : Number;
 		
 		private var camera : Camera;
 		
 		private var interfaceBar:Interface;
+		private var instruction:Instruction;
 		private var photoBitmap:Bitmap;
 		
 		private var feedback:Feedback;
 		private var feedbackTimer:Timer;
 		
+		private var bPlaying:Boolean;
 		private var _lifes : Sprite;
 		
 		private var tuner:GameTuner;
 		
+		
 		public function NewSafari() {
 			
-			tuner = new GameTuner(this);
+			tuner = GameTuner.getInstance();
+			tuner.load(this);
 			
 			SoundManager.setLibrary("SafariSounds");
 			//SoundManager.playMusic(SafariSounds.SAFARI_MUSIC);
@@ -58,11 +64,16 @@ package {
 			background.addChild(new Layer("SecondLayerMC",-51,6*1.5));
 			background.addChild(new Layer("FirstLayerMC",-51,7*1.5));
 			
-			addEventListener(Event.ENTER_FRAME,onEnterFrame);
+			
+			//addEventListener(Event.ENTER_FRAME,onEnterFrame);
 			
 			addChild(interfaceBar = new Interface());
 			photoBitmap = new Bitmap();
 			interfaceBar.photo1.addChild(photoBitmap);
+			
+			
+			
+			
 			
 			velocity = 1.5;
 			blinkTimer = new Timer(250);
@@ -74,7 +85,7 @@ package {
 			
 			addChild(camera);
 			
-			addEventListener(MouseEvent.CLICK,snapshot);
+			
 			
 			feedback = new Feedback();
 			feedbackTimer = new Timer(1000,1);
@@ -83,14 +94,42 @@ package {
 			
 			
 			addChild(_lifes = new Sprite);
-			lifes = 3;
 			
+			
+			addChild(instruction = new Instruction());
+			instruction.bPlay.addEventListener(MouseEvent.CLICK, onPlay);
+			bPlaying = false;
+			camera.visible = false;
+			
+		}
+		
+		
+		
+		private function onPlay(e:Event) : void {
+			instruction.visible = false;
+			lifes = 3;
+			bPlaying = true;
+			camera.visible = true;
+			e.stopImmediatePropagation();
+			addEventListener(MouseEvent.CLICK,snapshot);
+			GameTuner.getInstance().start();
+			
+			
+		}
+		
+		private function stop() : void {
+			removeEventListener(MouseEvent.CLICK,snapshot);
+			bPlaying = false;
+			instruction.visible = true;
+			camera.visible = false;
 		}
 		
 		public function onClient(obj:Object) : void {
 			if	(obj is GameTuner) {
 				
 				trace(tuner.numSamples);
+				trace(tuner.paramValue(SafariParameters.PARAM_SPEED, 0));
+				addEventListener(Event.ENTER_FRAME,onEnterFrame);
 			}
 		}
 		
@@ -118,6 +157,7 @@ package {
 		}
 		
 		private function onEnterFrame(e:Event) : void {
+			//trace(GameTuner.getInstance().currentParamValue(SafariParameters.PARAM_SPEED));
 			
 			var camPos:Point = new Point(stage.mouseX,stage.mouseY);
 				camPos = this.globalToLocal(camPos);
@@ -168,7 +208,7 @@ package {
 				}	
 			}			
 				
-			if (!currentAnimal) {
+			if (!currentAnimal && bPlaying) {
 					
 				var layer:Layer = Math.random()>0.5 ? near : river;
 					
@@ -194,6 +234,11 @@ package {
 				
 				camera.adjust(animalDistance < 100);
 				camera.draw(background);
+			}
+			
+			if (!lifes) {
+				stop();
+				
 			}
 		
 			

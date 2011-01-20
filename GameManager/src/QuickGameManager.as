@@ -46,13 +46,10 @@ package {
 			testUI.bClose.enabled = false;	
 		}
 		
-		public function close() : void {
-			
+		public function close() : void {			
 		}
 
-		
-		
-		
+
 
 		private function onStart(e:Event) : void {
 			e.stopImmediatePropagation();
