@@ -14,7 +14,7 @@
 
 void tttContainer::addPackage(string filename) {
 	tttPackage p;
-	bool loaded = p.loadFile(filename);
+	bool loaded = p.loadFile(filename,false);
 	assert(loaded);
 	p.display();
 	packages.push_back(p);
@@ -44,14 +44,14 @@ void tttContainer::eval() {
 	int packageOffset = 0;
 	
 	for (iter=packages.begin(); iter!=packages.end(); iter++) {
-		int start = iter->offsets[0] & 0xEFFFFFF ;
+		int start = iter->offsets[0] & 0xEFFFFFFF ;
 		
 		for (int i=0; i < iter->numSentences ; i++) { // (*numSentences)-1
 			sentence s;
 			
 			s.packageNum = distance(packages.begin(), iter);
-			s.srcOffset = iter->offsets[i] & 0xEFFFFFF;
-			s.offset = (iter->offsets[i] & 0xEFFFFFF) - start +packageOffset+offset;
+			s.srcOffset = iter->offsets[i] & 0xEFFFFFFF;
+			s.offset = (iter->offsets[i] & 0xEFFFFFFF) - start +packageOffset+offset;
 			//int offset1 = ((i+1 < iter->numSentences) ?  iter->offsets[i+1] & 0xEFFFFFF  : (iter->size /2)-1;
 			//cout << i+1 << ": " << offset0 << "-" << offset1 << " (" << offset0*2 << "-" << offset1*2 << ")" << endl;
 			//cout << j+1 << ": " << offset0 << " (" << offset0*2 << ")" << endl;
@@ -76,17 +76,17 @@ void tttContainer::display() {
 }
 
 void tttContainer::saveFile(string filename) {
-	ofstream myFile (filename.c_str(),  ios::out | ios::binary);
+	ofstream myFile (filename.c_str(),  ios::out | ios::binary | ios::app);
 	
-	unsigned short space = 0;
+	unsigned short no_sensory = 0xAB00;
 	
 	if (myFile.is_open()) {
 		short numSentences = sentences.size();
 		myFile.write ((char*)&numSentences, 2);
-		myFile.write ((char*)&space, 2); // undefined
+		myFile.write ((char*)&no_sensory, 2); // undefined
 		
 		for (vector<sentence>::iterator siter = sentences.begin(); siter!=sentences.end(); siter++) {
-			signed int offset = siter->offset | 0x1000000;
+			unsigned int offset = siter->offset | 0x10000000;
 			myFile.write ((char*)&offset, sizeof (unsigned int));
 		}
 		

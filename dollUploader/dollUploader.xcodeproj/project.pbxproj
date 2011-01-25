@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* dollUploader.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* dollUploader.1 */; };
+		E422866C12EEC54E006027AE /* tttUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E422866B12EEC54E006027AE /* tttUtils.cpp */; };
 		E42F811712E7422600C7E13D /* tttPackage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42F811612E7422600C7E13D /* tttPackage.cpp */; };
 		E42F816612E7595100C7E13D /* tttContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42F816512E7595100C7E13D /* tttContainer.cpp */; };
 /* End PBXBuildFile section */
@@ -30,12 +31,12 @@
 		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* dollUploader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dollUploader; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* dollUploader.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = dollUploader.1; sourceTree = "<group>"; };
+		E422866A12EEC54E006027AE /* tttUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttUtils.h; sourceTree = "<group>"; };
+		E422866B12EEC54E006027AE /* tttUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttUtils.cpp; sourceTree = "<group>"; };
 		E42F811512E7422600C7E13D /* tttPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttPackage.h; sourceTree = "<group>"; };
 		E42F811612E7422600C7E13D /* tttPackage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttPackage.cpp; sourceTree = "<group>"; };
 		E42F816412E7595100C7E13D /* tttContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttContainer.h; sourceTree = "<group>"; };
 		E42F816512E7595100C7E13D /* tttContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttContainer.cpp; sourceTree = "<group>"; };
-		E43563EC12DC6976007B31CF /* TEST3.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TEST3.H; sourceTree = "<group>"; };
-		E485521612DB531F00A92A56 /* PINK.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PINK.H; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +63,13 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E43563EC12DC6976007B31CF /* TEST3.H */,
-				E485521612DB531F00A92A56 /* PINK.H */,
 				08FB7796FE84155DC02AAC07 /* main.cpp */,
 				E42F811512E7422600C7E13D /* tttPackage.h */,
 				E42F811612E7422600C7E13D /* tttPackage.cpp */,
 				E42F816412E7595100C7E13D /* tttContainer.h */,
 				E42F816512E7595100C7E13D /* tttContainer.cpp */,
+				E422866A12EEC54E006027AE /* tttUtils.h */,
+				E422866B12EEC54E006027AE /* tttUtils.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -142,6 +143,7 @@
 				8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */,
 				E42F811712E7422600C7E13D /* tttPackage.cpp in Sources */,
 				E42F816612E7595100C7E13D /* tttContainer.cpp in Sources */,
+				E422866C12EEC54E006027AE /* tttUtils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

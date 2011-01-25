@@ -33,7 +33,7 @@ void dump_memory(short *start,int start16B,int end16B) {
 
 
 
-bool tttPackage::loadFile(string filename) {
+bool tttPackage::loadFile(string filename,bool bWithData) {
 	
 	
 	ifstream myfile(filename.c_str(),ios::in|ios::binary|ios::ate);
@@ -42,8 +42,13 @@ bool tttPackage::loadFile(string filename) {
 		size = myfile.tellg();
 		
 		
+		size -= bWithData ? 1024 : 0;
+			
 		memblock = new char [size];
-		myfile.seekg (0, ios::beg);
+			
+		myfile.seekg (bWithData ? 1024 : 0, ios::beg);
+		
+
 		myfile.read (memblock, size);
 		myfile.close();
 		
@@ -51,9 +56,9 @@ bool tttPackage::loadFile(string filename) {
 		
 
 		
-		offsets = reinterpret_cast< signed int*> (memblock+4) ;
+		offsets = reinterpret_cast<unsigned int*> (memblock+4) ;
 		
-		dataOffset = (offsets[0] & 0xEFFFFFF)*2;
+		dataOffset = (offsets[0] & 0xEFFFFFFF)*2;
 		dataLength = (int)(size) - 4*(1+numSentences);
 		
 		cout << "name: " << filename << ", size:" << size  << ", numSentences: " << numSentences << ", dataStart: " << dataOffset << ", dataLength: " << dataLength << endl;
@@ -70,8 +75,8 @@ bool tttPackage::loadFile(string filename) {
 void tttPackage::display() {
 			
 	for (int i=0; i < numSentences ; i++) { // (*numSentences)-1
-		int offset0 = offsets[i] & 0xEFFFFFF;
-		int offset1 = ((i+1 < numSentences) ?  offsets[i+1] & 0xEFFFFFF  : size/2)-1;
+		int offset0 = offsets[i] & 0xEFFFFFFF;
+		int offset1 = ((i+1 < numSentences) ?  offsets[i+1] & 0xEFFFFFFF  : size/2)-1;
 		cout << i+1 << ": " << offset0 << "-" << offset1 << " (" << offset0*2 << "-" << offset1*2 << ")" << endl;
 		//cout << dec << i+1 << ": " << (offset0 & 0xEFFFFFF) << " " << hex << (offsets[i] & 0xEFFFFFF) << endl;
 	}

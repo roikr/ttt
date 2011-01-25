@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include "tttContainer.h"
+#include "tttUtils.h"
 
 using namespace std;
 
@@ -14,14 +15,15 @@ int main (int argc, const char * argv[]) {
 //	p1.exit();
 	
 	tttContainer container;
-	container.addPackage("TEST3.BIN");
-	container.addPackage("TEST3.BIN");
+	container.addPackage("TEST1.BIN");
+	container.addPackage("TEST2.BIN");
 	container.eval();
 	container.display();
-	container.saveFile("MYTEST.BIN");
+	tttCopyFile("PREPINK.BIN", "TEST3OUT.BIN");
+	container.saveFile("TEST3OUT.BIN");
 	
 	tttPackage p;
-	p.loadFile("MYTEST.BIN");
+	p.loadFile("TEST3OUT.BIN",true);
 	p.display();
     return 0;
 }

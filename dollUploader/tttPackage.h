@@ -16,14 +16,14 @@ class tttPackage {
 	
 public:
 	
-	bool loadFile(string filename);
+	bool loadFile(string filename,bool bWithData);
 	void display();
 	void exit();
 	
 	char * memblock;
 	ifstream::pos_type size;
 	int numSentences;
-	int * offsets;
+	unsigned int * offsets;
 	
 	int dataOffset;
 	int dataLength;
