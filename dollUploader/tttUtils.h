@@ -10,7 +10,10 @@
 #pragma once
 
 #include <string>
+#include "tttData.h"
 
 using namespace std;
 
 void tttCopyFile(string src,string dest);
+void tttCreateHeader(string filename,tttData &data);
+void tttDumpData(tttData &data);
