@@ -11,9 +11,11 @@
 
 #include <string>
 #include "tttData.h"
+#include "tttContainer.h"
 
 using namespace std;
 
 void tttCopyFile(string src,string dest);
 void tttCreateHeader(string filename,tttData &data);
 void tttDumpData(tttData &data);
+void tttBuildContainer(tttContainer &container,tttData &data);

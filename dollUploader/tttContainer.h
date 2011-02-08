@@ -7,6 +7,8 @@
  *
  */
 
+#pragma once
+
 #include "tttPackage.h"
 #include <string>
 #include <vector>

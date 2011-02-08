@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <assert.h>
 #include "tttContainer.h"
@@ -20,21 +21,32 @@ int main (int argc, const char * argv[]) {
 	
 	tttData data;
 	tttParserParse("ttt.xml", data);
-	tttDumpData(data);
+//	tttDumpData(data);
 	
 	tttCreateHeader("TESTOUT.BIN", data);
 	
+	
+	
 	tttContainer container;
-	container.addPackage("TEST1.BIN");
-	container.addPackage("TEST2.BIN");
+	tttBuildContainer(container, data);
+	//container.addPackage("HARMONIC.BIN");
+//	container.addPackage("DOUBLE.BIN");
+//	container.addPackage("ONECLICK.BIN");
+//	container.addPackage("SITUATION.BIN");
+//	for (int i=0; i<10; i++) {
+//		container.addPackage("WEBSITE.BIN");
+//	}
+//	for (int i=0; i<10; i++) {
+//		container.addPackage("MEDIA.BIN");
+//	}
 	container.eval();
-	container.display();
+	//container.display();
 	//tttCopyFile("PREPINK.BIN", "TEST3OUT.BIN");
 	container.saveFile("TESTOUT.BIN");
 	
-	tttPackage p;
-	p.loadFile("TESTOUT.BIN",true);
-	p.display();
+//	tttPackage p;
+//	p.loadFile("TESTOUT.BIN",true);
+//	p.display();
 	
     return 0;
 }

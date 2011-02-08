@@ -16,7 +16,7 @@ void tttContainer::addPackage(string filename) {
 	tttPackage p;
 	bool loaded = p.loadFile(filename,false);
 	assert(loaded);
-	p.display();
+	//p.display();
 	packages.push_back(p);
 	
 }
