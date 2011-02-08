@@ -1,0 +1,99 @@
+<ttt>
+	<doll>201</doll>
+	<groups>
+		<group>
+			<beep>5</beep>
+			<beep>6</beep>
+			<beep>9</beep>
+		</group>
+		<group>
+			<beep>0</beep>
+			<beep>2</beep>
+			<beep>3</beep>
+			<beep>19</beep>
+		</group>
+		<group>
+			<beep>18</beep>
+		</group>
+		<group>
+			<beep>0</beep>
+			<beep>1</beep>
+			<beep>2</beep>
+			<beep>3</beep>
+			<beep>4</beep>
+			<beep>5</beep>
+			<beep>6</beep>
+			<beep>12</beep>
+			<beep>14</beep>
+			<beep>15</beep>
+		</group>
+		<group>
+			<beep>1</beep>
+			<beep>3</beep>
+			<beep>4</beep>
+			<beep>5</beep>
+			<beep>6</beep>
+			<beep>16</beep>
+			<beep>17</beep>
+		</group>
+		<group>
+			<beep>0</beep>
+			<beep>2</beep>
+			<beep>12</beep>
+			<beep>15</beep>
+			<beep>19</beep>
+		</group>
+		<group>
+			<beep>1</beep>
+			<beep>3</beep>
+			<beep>4</beep>
+			<beep>7</beep>
+			<beep>8</beep>
+			<beep>14</beep>
+			<beep>17</beep>
+		</group>
+		<group>
+			<beep>7</beep>
+			<beep>14</beep>
+		</group>
+		<group>
+			<beep>0</beep>
+			<beep>5</beep>
+			<beep>6</beep>
+			<beep>15</beep>
+			<beep>19</beep>
+		</group>
+	</groups>
+
+	<basic>
+		<package name="HARMONIC" filename="HARMONIC.BIN" numSentences="99"/>
+		<package name="DOUBLE_CLICK" filename="DOUBLE_CLICK.BIN" numSentences="400"/>
+		<package name="ONE_CLICK" filename="ONE_CLICK.BIN" numSentences="500"/>
+		<package name="SITUATION" filename="SITUATION.BIN" numSentences="500"/>
+	</basic>
+	<website>
+		<package name="WEBSITE_01" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+		<package name="WEBSITE_02" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+		<package name="WEBSITE_03" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+		<package name="WEBSITE_04" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+		<package name="WEBSITE_05" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+		<package name="WEBSITE_06" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+		<package name="WEBSITE_07" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+		<package name="WEBSITE_08" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+		<package name="WEBSITE_09" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+		<package name="WEBSITE_10" filename="WEBSITE_EMPTY.BIN" numSentences="50" code="255"/>
+	</website>
+	<media>
+		<package name="MEDIA_01" filename="MEDIA_EMPTY.BIN" numSentences="250" code="100"/>
+		<package name="MEDIA_02" filename="MEDIA_EMPTY.BIN" numSentences="250" code="255"/>
+		<package name="MEDIA_03" filename="MEDIA_EMPTY.BIN" numSentences="250" code="255"/>
+		<package name="MEDIA_04" filename="MEDIA_EMPTY.BIN" numSentences="250" code="255"/>
+		<package name="MEDIA_05" filename="MEDIA_EMPTY.BIN" numSentences="250" code="255"/>
+		<package name="MEDIA_06" filename="MEDIA_EMPTY.BIN" numSentences="250" code="255"/>
+		<package name="MEDIA_07" filename="MEDIA_EMPTY.BIN" numSentences="250" code="255"/>
+		<package name="MEDIA_08" filename="MEDIA_EMPTY.BIN" numSentences="250" code="255"/>
+		<package name="MEDIA_09" filename="MEDIA_EMPTY.BIN" numSentences="250" code="255"/>
+		<package name="MEDIA_10" filename="MEDIA_EMPTY.BIN" numSentences="250" code="255"/>
+	</media>
+</ttt>
+	

@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* dollUploader.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* dollUploader.1 */; };
-		E422866C12EEC54E006027AE /* tttUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E422866B12EEC54E006027AE /* tttUtils.cpp */; };
-		E42F811712E7422600C7E13D /* tttPackage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42F811612E7422600C7E13D /* tttPackage.cpp */; };
-		E42F816612E7595100C7E13D /* tttContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E42F816512E7595100C7E13D /* tttContainer.cpp */; };
-		E4873D5C12FAFB9E00EADD08 /* tttParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4873D5B12FAFB9E00EADD08 /* tttParser.cpp */; };
 		E4873D6712FAFBC200EADD08 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4873D6012FAFBC200EADD08 /* tinyxml.cpp */; };
 		E4873D6812FAFBC200EADD08 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4873D6212FAFBC200EADD08 /* tinyxmlerror.cpp */; };
 		E4873D6912FAFBC200EADD08 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4873D6312FAFBC200EADD08 /* tinyxmlparser.cpp */; };
 		E4873D6A12FAFBC200EADD08 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4873D6512FAFBC200EADD08 /* ofxXmlSettings.cpp */; };
-		E498EB0512FB14EF00C85CD9 /* ofMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E498EAEB12FB136A00C85CD9 /* ofMain.cpp */; };
+		E4B4F7081301B8C800B7A10F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4F6FB1301B8C800B7A10F /* main.cpp */; };
+		E4B4F7091301B8C800B7A10F /* ofMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4F6FC1301B8C800B7A10F /* ofMain.cpp */; };
+		E4B4F70A1301B8C800B7A10F /* tttContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4F6FE1301B8C800B7A10F /* tttContainer.cpp */; };
+		E4B4F70B1301B8C800B7A10F /* tttData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4F7001301B8C800B7A10F /* tttData.cpp */; };
+		E4B4F70C1301B8C800B7A10F /* tttPackage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4F7021301B8C800B7A10F /* tttPackage.cpp */; };
+		E4B4F70D1301B8C800B7A10F /* tttParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4F7041301B8C800B7A10F /* tttParser.cpp */; };
+		E4B4F70E1301B8C800B7A10F /* tttUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B4F7061301B8C800B7A10F /* tttUtils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,17 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* dollUploader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dollUploader; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* dollUploader.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = dollUploader.1; sourceTree = "<group>"; };
-		E422866A12EEC54E006027AE /* tttUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttUtils.h; sourceTree = "<group>"; };
-		E422866B12EEC54E006027AE /* tttUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttUtils.cpp; sourceTree = "<group>"; };
-		E42F811512E7422600C7E13D /* tttPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttPackage.h; sourceTree = "<group>"; };
-		E42F811612E7422600C7E13D /* tttPackage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttPackage.cpp; sourceTree = "<group>"; };
-		E42F816412E7595100C7E13D /* tttContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttContainer.h; sourceTree = "<group>"; };
-		E42F816512E7595100C7E13D /* tttContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttContainer.cpp; sourceTree = "<group>"; };
-		E4873D5A12FAFB9E00EADD08 /* tttParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttParser.h; sourceTree = "<group>"; };
-		E4873D5B12FAFB9E00EADD08 /* tttParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttParser.cpp; sourceTree = "<group>"; };
 		E4873D5E12FAFBC200EADD08 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		E4873D6012FAFBC200EADD08 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
 		E4873D6112FAFBC200EADD08 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
@@ -52,9 +44,19 @@
 		E4873D6312FAFBC200EADD08 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
 		E4873D6512FAFBC200EADD08 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
 		E4873D6612FAFBC200EADD08 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
-		E498EAE312FB111000C85CD9 /* tttData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttData.h; sourceTree = "<group>"; };
-		E498EAEA12FB136A00C85CD9 /* ofMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofMain.h; sourceTree = "<group>"; };
-		E498EAEB12FB136A00C85CD9 /* ofMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofMain.cpp; sourceTree = "<group>"; };
+		E4B4F6FB1301B8C800B7A10F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E4B4F6FC1301B8C800B7A10F /* ofMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofMain.cpp; sourceTree = "<group>"; };
+		E4B4F6FD1301B8C800B7A10F /* ofMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofMain.h; sourceTree = "<group>"; };
+		E4B4F6FE1301B8C800B7A10F /* tttContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttContainer.cpp; sourceTree = "<group>"; };
+		E4B4F6FF1301B8C800B7A10F /* tttContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttContainer.h; sourceTree = "<group>"; };
+		E4B4F7001301B8C800B7A10F /* tttData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttData.cpp; sourceTree = "<group>"; };
+		E4B4F7011301B8C800B7A10F /* tttData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttData.h; sourceTree = "<group>"; };
+		E4B4F7021301B8C800B7A10F /* tttPackage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttPackage.cpp; sourceTree = "<group>"; };
+		E4B4F7031301B8C800B7A10F /* tttPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttPackage.h; sourceTree = "<group>"; };
+		E4B4F7041301B8C800B7A10F /* tttParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttParser.cpp; sourceTree = "<group>"; };
+		E4B4F7051301B8C800B7A10F /* tttParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttParser.h; sourceTree = "<group>"; };
+		E4B4F7061301B8C800B7A10F /* tttUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tttUtils.cpp; sourceTree = "<group>"; };
+		E4B4F7071301B8C800B7A10F /* tttUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tttUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,31 +73,12 @@
 		08FB7794FE84155DC02AAC07 /* dollUploader */ = {
 			isa = PBXGroup;
 			children = (
+				E4B4F6FA1301B8C800B7A10F /* src */,
 				E4873D5D12FAFBC200EADD08 /* ofxXmlSettings */,
-				08FB7795FE84155DC02AAC07 /* Source */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
 			name = dollUploader;
-			sourceTree = "<group>";
-		};
-		08FB7795FE84155DC02AAC07 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				E498EAEA12FB136A00C85CD9 /* ofMain.h */,
-				E498EAEB12FB136A00C85CD9 /* ofMain.cpp */,
-				08FB7796FE84155DC02AAC07 /* main.cpp */,
-				E42F811512E7422600C7E13D /* tttPackage.h */,
-				E42F811612E7422600C7E13D /* tttPackage.cpp */,
-				E42F816412E7595100C7E13D /* tttContainer.h */,
-				E42F816512E7595100C7E13D /* tttContainer.cpp */,
-				E422866A12EEC54E006027AE /* tttUtils.h */,
-				E422866B12EEC54E006027AE /* tttUtils.cpp */,
-				E4873D5A12FAFB9E00EADD08 /* tttParser.h */,
-				E4873D5B12FAFB9E00EADD08 /* tttParser.cpp */,
-				E498EAE312FB111000C85CD9 /* tttData.h */,
-			);
-			name = Source;
 			sourceTree = "<group>";
 		};
 		1AB674ADFE9D54B511CA2CBB /* Products */ = {
@@ -141,6 +124,26 @@
 			children = (
 				E4873D6512FAFBC200EADD08 /* ofxXmlSettings.cpp */,
 				E4873D6612FAFBC200EADD08 /* ofxXmlSettings.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		E4B4F6FA1301B8C800B7A10F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B4F6FB1301B8C800B7A10F /* main.cpp */,
+				E4B4F6FC1301B8C800B7A10F /* ofMain.cpp */,
+				E4B4F6FD1301B8C800B7A10F /* ofMain.h */,
+				E4B4F6FE1301B8C800B7A10F /* tttContainer.cpp */,
+				E4B4F6FF1301B8C800B7A10F /* tttContainer.h */,
+				E4B4F7001301B8C800B7A10F /* tttData.cpp */,
+				E4B4F7011301B8C800B7A10F /* tttData.h */,
+				E4B4F7021301B8C800B7A10F /* tttPackage.cpp */,
+				E4B4F7031301B8C800B7A10F /* tttPackage.h */,
+				E4B4F7041301B8C800B7A10F /* tttParser.cpp */,
+				E4B4F7051301B8C800B7A10F /* tttParser.h */,
+				E4B4F7061301B8C800B7A10F /* tttUtils.cpp */,
+				E4B4F7071301B8C800B7A10F /* tttUtils.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -195,16 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E498EB0512FB14EF00C85CD9 /* ofMain.cpp in Sources */,
-				8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */,
-				E42F811712E7422600C7E13D /* tttPackage.cpp in Sources */,
-				E42F816612E7595100C7E13D /* tttContainer.cpp in Sources */,
-				E422866C12EEC54E006027AE /* tttUtils.cpp in Sources */,
-				E4873D5C12FAFB9E00EADD08 /* tttParser.cpp in Sources */,
 				E4873D6712FAFBC200EADD08 /* tinyxml.cpp in Sources */,
 				E4873D6812FAFBC200EADD08 /* tinyxmlerror.cpp in Sources */,
 				E4873D6912FAFBC200EADD08 /* tinyxmlparser.cpp in Sources */,
 				E4873D6A12FAFBC200EADD08 /* ofxXmlSettings.cpp in Sources */,
+				E4B4F7081301B8C800B7A10F /* main.cpp in Sources */,
+				E4B4F7091301B8C800B7A10F /* ofMain.cpp in Sources */,
+				E4B4F70A1301B8C800B7A10F /* tttContainer.cpp in Sources */,
+				E4B4F70B1301B8C800B7A10F /* tttData.cpp in Sources */,
+				E4B4F70C1301B8C800B7A10F /* tttPackage.cpp in Sources */,
+				E4B4F70D1301B8C800B7A10F /* tttParser.cpp in Sources */,
+				E4B4F70E1301B8C800B7A10F /* tttUtils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +219,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "bin/$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -222,6 +227,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/bin;
 				PRODUCT_NAME = dollUploader;
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
