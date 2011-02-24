@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ofxXmlSettings">
+      <UniqueIdentifier>{ff639f0a-2062-494e-84da-73871077f5da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxXmlSettings\src">
+      <UniqueIdentifier>{deb292a9-f93a-47c1-94a2-239b029cdc63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ofxXmlSettings\libs">
+      <UniqueIdentifier>{c02459c2-92b7-4ae5-b30a-249f754d98b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ofMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tttContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tttData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tttPackage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tttParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tttUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ofxXmlSettings\libs\tinyxml.cpp">
+      <Filter>ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="ofxXmlSettings\libs\tinyxmlerror.cpp">
+      <Filter>ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="ofxXmlSettings\libs\tinyxmlparser.cpp">
+      <Filter>ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="ofxXmlSettings\src\ofxXmlSettings.cpp">
+      <Filter>ofxXmlSettings\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tttDownloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\tttContainer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tttData.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tttPackage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tttParser.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tttUtils.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ofxXmlSettings\libs\tinyxml.h">
+      <Filter>ofxXmlSettings\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="ofxXmlSettings\src\ofxXmlSettings.h">
+      <Filter>ofxXmlSettings\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofMain.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tttDownloader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

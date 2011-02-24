@@ -132,15 +132,15 @@ void tttCreateHeader(string filename,tttData &data) {
 void tttBuildContainer(tttContainer &container,tttData &data) {
 	vector<package>::iterator piter;
 	for (piter=data.basic.begin(); piter!=data.basic.end(); piter++) {
-		cout << "package: name: " << piter->name << ", filename: " << piter->filename << ", numSentences: " << piter->numSentences << endl;
+		cout << "package: " << piter->filename << ", numSentences: " << piter->numSentences << endl;
 		container.addPackage(piter->filename);
 	}
 	for (piter=data.website.begin(); piter!=data.website.end(); piter++) {
-		cout << "package: name: " << piter->name << ", filename: " << piter->filename << ", numSentences: " << piter->numSentences << ", code: " << piter->code << endl;
+		cout << "package: " << piter->filename << ", numSentences: " << piter->numSentences << ", code: " << piter->code << endl;
 		container.addPackage(piter->filename);
 	}
 	for (piter=data.media.begin(); piter!=data.media.end(); piter++) {
-		cout << "package: name: " << piter->name << ", filename: " << piter->filename << ", numSentences: " << piter->numSentences << ", code: " << piter->code << endl;
+		cout << "package: " << piter->filename << ", numSentences: " << piter->numSentences << ", code: " << piter->code << endl;
 		container.addPackage(piter->filename);
 	}
 }
